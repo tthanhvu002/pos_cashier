@@ -37,3 +37,10 @@ body{
 .payment-wrapper.active{
     display: block;
 }
+
+.food-info-wrapper{
+    display: none;
+}
+.food-info-wrapper.active{
+    display: block;
+}

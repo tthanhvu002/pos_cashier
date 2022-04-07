@@ -90,6 +90,14 @@ body {
   display: block;
 }
 
+.food-info-wrapper {
+  display: none;
+}
+
+.food-info-wrapper.active {
+  display: block;
+}
+
 .header {
   padding: 15px;
   padding-bottom: 0;
@@ -367,7 +375,7 @@ body {
   background-color: #2d384e;
 }
 .payment-header .payment-info .container {
-  padding: 15px;
+  padding: 15px 0;
 }
 .payment-header .payment-info p {
   color: #fff;
@@ -429,6 +437,19 @@ body {
   cursor: pointer;
   position: relative;
   border-bottom: 1px solid #ced6e0;
+}
+.list .item .pen-icon {
+  position: absolute;
+  color: red;
+  font-size: 10px;
+  background-color: #fff;
+  padding: 2px 3px;
+  border-radius: 100rem;
+  left: 20px;
+  display: none;
+}
+.list .item .pen-icon.active {
+  display: block;
 }
 .list .item .amount {
   font-size: 16px;
@@ -600,6 +621,104 @@ body {
 .popup-btn .confirm {
   background-color: #ef5337;
   color: #fff;
+}
+
+.list-food-info {
+  height: 526px;
+  overflow: scroll;
+}
+.list-food-info .item.done {
+  background-color: #f6f7fb;
+}
+.list-food-info .item {
+  cursor: pointer;
+  position: relative;
+  border-bottom: 1px solid #ced6e0;
+  padding: 10px 0 10px;
+}
+.list-food-info .item .d-flex:last-child, .list-food-info .item .d-flex:nth-child(3) {
+  padding-left: 38px;
+}
+.list-food-info .item .pen-icon {
+  position: absolute;
+  color: red;
+  font-size: 10px;
+  background-color: #fff;
+  padding: 2px 3px;
+  border-radius: 100rem;
+  left: 20px;
+  display: none;
+}
+.list-food-info .item .pen-icon.active {
+  display: block;
+}
+.list-food-info .item .amount {
+  font-size: 16px;
+  font-weight: 600;
+  color: #96a4b7;
+}
+.list-food-info .item .amount-number, .list-food-info .item .pxn {
+  font-weight: 600;
+}
+.list-food-info .item .pxn {
+  min-width: 90px;
+  text-align: right;
+}
+.list-food-info .item .time {
+  margin-top: 6px;
+}
+.list-food-info .item .name-wrap {
+  gap: 15px;
+  padding-left: 0 !important;
+  justify-content: space-around;
+  position: relative;
+}
+.list-food-info .item .name-wrap span {
+  position: absolute;
+  left: 150px;
+  color: #96a4b7;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 3px;
+}
+.list-food-info .item .food-feature {
+  color: #96a4b7;
+  font-size: 14px;
+}
+.list-food-info .item .food-status {
+  margin-left: auto;
+}
+.list-food-info .item .food-status p {
+  color: #ced6e0;
+}
+.list-food-info .item .food-status span {
+  color: #ee9720;
+}
+.list-food-info .item .food-status .done {
+  color: #96a4b7;
+}
+.list-food-info .item .clock {
+  position: relative;
+}
+.list-food-info .item .clock img:last-child {
+  position: absolute;
+  top: 2px;
+  left: 7px;
+}
+.list-food-info .item .remove {
+  color: red;
+  font-weight: bold;
+}
+.list-food-info .item .remove i {
+  margin-right: 6px;
+  color: red;
+}
+.list-food-info .item .remove.active {
+  display: block;
+}
+
+.list-food-info::-webkit-scrollbar {
+  display: none;
 }
 
 /*# sourceMappingURL=app.css.map */
