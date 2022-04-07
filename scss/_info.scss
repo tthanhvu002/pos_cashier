@@ -1,0 +1,48 @@
+.info{
+    background-color: #2d384e;
+    .info-container{
+        display: flex;
+        height: 82px;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding-bottom: 23px;
+        div.active{
+            color: #fff;
+            .line{
+                display: block;
+            }
+        }
+        div{
+            cursor: pointer;
+            color: #818895;
+            position: relative;
+            font-size: 18px;
+            .line{
+                position: absolute;
+                bottom: -23px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                background-color: #ef5337;
+                height: 3px;
+                width: 100%;
+                display: none;
+            }
+        }
+        .number{
+            color: #fff;
+            position: absolute;
+            top: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            align-self: flex-end;
+            font-size: 12px;
+            background-color: #ef5337;
+            padding: 4px 6px;
+            border-radius: 100rem;
+        }
+        .number.active{
+            background-color: transparent;
+        }
+    }
+    
+}

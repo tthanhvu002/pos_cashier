@@ -1,0 +1,41 @@
+.list{
+    height: 330px;
+    overflow: scroll;
+    .item{
+        cursor: pointer;
+        position: relative;
+        border-bottom: 1px solid $gray;
+        .amount{
+            font-size: 16px;
+            font-weight: 600;
+            color: $text-gray;
+        }
+        .amount-number, .pxn{
+            font-weight: 600;
+        }
+        .pxn{
+            min-width: 90px;
+            text-align: right;
+        }
+        .d-flex:last-child{
+            margin-top: 15px;
+        }
+        .remove{
+            position: absolute;
+            bottom: 10px;
+            left: 20px;
+            color: red;
+            display: none;
+            i{
+                margin-right: 6px;
+                color: red;
+            }
+        }
+        .remove.active{
+            display: block;
+        }
+    }
+}
+.list::-webkit-scrollbar{
+    display: none;
+}

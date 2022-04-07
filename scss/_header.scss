@@ -1,0 +1,120 @@
+.header{
+    padding: 15px;
+    padding-bottom: 0;
+    &-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 15px;
+        border-bottom: 1px solid $gray;
+
+    }
+    &-left{
+        position: relative;
+        width: 25px;
+        height: 2px;
+        background-color: $gray;
+
+    }
+    &-left-top{
+        position: absolute;
+        top: -10px;
+        right: 0;
+        width: 50%;
+        background-color: $gray;
+        height: 2px;
+    }
+    &-left-bottom{
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 50%;
+        background-color: $gray;
+        height: 2px;
+    }
+    &-right{
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+    &-bell{
+        position: relative;
+        border-right: 1px solid $gray;
+        padding-right: 15px;
+        .tingting{
+            position: absolute;
+            border-radius: 100rem;
+            width: 8px;
+            height: 8px;
+            right: 14px;
+            background-color: red;
+        }
+        .bell{
+        }
+        .bell-bottom{
+            transform: translate(6px, 0px);
+        }
+    }
+    .manage-container{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid $gray;
+        h2{
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .manage-number{
+            display: flex;
+            flex-direction: column;
+            p{
+                border-radius: 10px;
+                border-bottom-right-radius: 0px;
+                font-size: 22px;
+                background: rgb(239,90,53);
+                background: linear-gradient(90deg, rgba(239,90,53,1) 29%, rgba(238,144,34,1) 62%);
+                display: inline-block;
+                text-align: center;
+                margin-left:auto ;
+                padding: 4px 12px;
+                font-weight: 600;
+                color: #fff;
+                max-width: 60px;
+            }
+            span{
+                margin-top: 5px;
+                font-size: 10px;
+                color: $text-gray;
+            }
+        }
+    }
+    .filter-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0;
+        .d-flex{
+            align-items: center;
+            gap: 12px;
+        }
+        p{
+            color: #ef5337;
+        }
+        .icon{
+            font-size: 10px;
+        }
+        .icon.border-right{
+            padding-right: 16px;
+            border-right: 1px solid $gray;
+        }
+        .icon.round{
+            border: 1px solid #c5ceda;
+            border-radius: 100rem;
+            padding:2px 3px;
+            color: #c5ceda;
+        }
+    }
+    
+}

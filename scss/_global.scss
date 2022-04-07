@@ -1,0 +1,39 @@
+body{
+    line-height: 1;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.wrapper{
+    margin: 100px auto;
+    max-width: 375px;
+    overflow: hidden;
+}
+.container{
+    max-width: 346px;
+    margin: 0 auto;
+}
+.d-flex{
+    display: flex;
+}
+.flex-column{
+    flex-direction: column;
+}
+
+.d-flex.center{
+    align-items: center;
+}
+.d-flex.between{
+    justify-content: space-between;
+}
+.payment-wrapper{
+    display: none;
+}
+.main-wrapper{
+    display: none;
+}
+.main-wrapper.active{
+    display: block;
+}
+.payment-wrapper.active{
+    display: block;
+}
