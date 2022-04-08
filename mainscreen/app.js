@@ -6,7 +6,7 @@ const foodInfoWrapper = document.querySelector('.food-info-wrapper')
 const items = document.querySelectorAll('.item')
 const closeBtn = document.querySelector('.icon.close')
 const closeFoodInfo = document.querySelector('.food-info-wrapper .icon.close')
-const payment = document.querySelectorAll('.payment-info-menu .d-flex:first-child')
+const payment = document.querySelectorAll('.pay-btn')
 console.log(payment );
 Array.from(noti).forEach(item => {
     item.onclick = () => {
@@ -88,10 +88,11 @@ popup.onclick = (e) => {
 }
 
 payment.forEach(item => {
+    console.log(item);
     item.onclick = () => {
-        paymentWrapper.classList.toggle('active')
-        foodInfoWrapper.classList.toggle('active')
-
+        paymentWrapper.classList.add('active')
+        foodInfoWrapper.classList.remove('active')
+        mainWrapper.classList.remove('active')
     }
 })
 

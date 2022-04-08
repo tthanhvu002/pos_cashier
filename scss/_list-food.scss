@@ -5,6 +5,7 @@
         cursor: pointer;
         position: relative;
         border-bottom: 1px solid $gray;
+        padding-left: 35px;
         .pen-icon{
             position: absolute;
             color: red;
@@ -33,6 +34,11 @@
         .d-flex:last-child{
             margin-top: 15px;
         }
+        .flag{
+            position: absolute;
+            top: 16px;
+            left: 10px;
+        }
         .remove{
             position: absolute;
             bottom: 10px;
@@ -57,5 +63,6 @@
     .item{
         margin-top: 0;
         box-shadow: none;
+        padding-left: 0;
     }
 }
