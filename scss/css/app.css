@@ -269,7 +269,7 @@ body {
   flex: 100%;
   border-radius: 4px;
   box-shadow: 0px 0px 5px #ccc;
-  padding: 10px;
+  padding: 6px;
   padding-left: 35px;
   position: relative;
 }
@@ -485,6 +485,11 @@ body {
   display: none;
 }
 
+.list.payment-list .item {
+  margin-top: 0;
+  box-shadow: none;
+}
+
 .payment-card {
   box-shadow: 0px 2px 10px #ced6e0;
 }
@@ -634,10 +639,8 @@ body {
   cursor: pointer;
   position: relative;
   border-bottom: 1px solid #ced6e0;
-  padding: 10px 0 10px;
-}
-.list-food-info .item .d-flex:last-child, .list-food-info .item .d-flex:nth-child(3) {
-  padding-left: 38px;
+  padding: 10px;
+  /*  */
 }
 .list-food-info .item .pen-icon {
   position: absolute;
@@ -693,6 +696,8 @@ body {
 }
 .list-food-info .item .food-status span {
   color: #ee9720;
+  min-width: 80px;
+  text-align: right;
 }
 .list-food-info .item .food-status .done {
   color: #96a4b7;

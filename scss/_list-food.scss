@@ -53,3 +53,9 @@
     display: none;
 }
 
+.list.payment-list{
+    .item{
+        margin-top: 0;
+        box-shadow: none;
+    }
+}

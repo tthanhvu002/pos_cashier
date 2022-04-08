@@ -8,10 +8,8 @@
         cursor: pointer;
         position: relative;
         border-bottom: 1px solid $gray;
-        padding: 6px 0 10px;
-        .d-flex:last-child, .d-flex:nth-child(3){
-            padding-left:38px;
-        }
+        padding: 10px ;
+        /*  */
         .pen-icon{
             position: absolute;
             color: red;
@@ -66,6 +64,8 @@
             }
             span{
                 color: #ee9720;
+                min-width: 80px;
+                text-align: right;
             }
             .done{
                 color: $text-gray;
