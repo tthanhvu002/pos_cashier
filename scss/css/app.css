@@ -649,7 +649,7 @@ body {
   background-color: #fff;
   padding: 2px 3px;
   border-radius: 100rem;
-  left: 20px;
+  left: 28px;
   display: none;
 }
 .list-food-info .item .pen-icon.active {
@@ -713,6 +713,7 @@ body {
 .list-food-info .item .remove {
   color: red;
   font-weight: bold;
+  display: none;
 }
 .list-food-info .item .remove i {
   margin-right: 6px;

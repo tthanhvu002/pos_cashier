@@ -33,7 +33,6 @@ Array.from(noti).forEach(item => {
 })
 
 
-console.log(closeFoodInfo);
 closeFoodInfo.onclick = () => {
     foodInfoWrapper.classList.toggle('active')
     mainWrapper.classList.toggle('active')
@@ -62,6 +61,7 @@ Array.from(itemFood).forEach(item => {
     item.onclick = () => {
         console.log(1);
         item.querySelector('.pen-icon').classList.toggle('active')
+        item.querySelector('.remove').classList.toggle('active')
 
     }
 })

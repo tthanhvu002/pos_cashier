@@ -17,7 +17,7 @@
             background-color: #fff;
             padding: 2px 3px;
             border-radius: 100rem;
-            left: 20px;
+            left: 28px;
             display: none;
         }
         .pen-icon.active{
@@ -82,6 +82,7 @@
         .remove{
             color: red;
             font-weight: bold;
+            display: none;
             i{
                 margin-right: 6px;
                 color: red;
