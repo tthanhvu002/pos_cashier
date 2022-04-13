@@ -1,11 +1,15 @@
 .list{
+    height: 100vh;
+
     padding-top: 25px;
-    
+    overflow: scroll;
+    padding-bottom: 20px;
     .item{
+
         flex: 100%;
         border-radius: 4px;
         box-shadow: 0px 0px 5px #ccc;
-        padding: 6px;
+        padding: 1vh;
         position: relative;
         .flag{
             position: absolute;

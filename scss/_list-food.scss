@@ -1,9 +1,10 @@
 .list{
-    height: 330px;
     overflow: scroll;
+    height: 100vh;
     .item{
         cursor: pointer;
         position: relative;
+        padding: 1vh;
         border-bottom: 1px solid $gray;
         padding-left: 35px;
         .pen-icon{
