@@ -49,13 +49,11 @@ body {
 
 .wrapper {
   margin: 0 auto;
-  max-width: 375px;
   overflow: hidden;
 }
 
 .container {
-  max-width: 346px;
-  margin: 0 auto;
+  margin: 0 15px;
 }
 
 .d-flex {
@@ -107,7 +105,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-bottom: 15px;
-  border-bottom: 1px solid #ced6e0;
+  position: relative;
 }
 .header-left {
   position: relative;
@@ -153,12 +151,12 @@ body {
   transform: translate(6px, 0px);
 }
 .header .manage-container {
+  position: relative;
   padding-top: 15px;
   padding-bottom: 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #ced6e0;
 }
 .header .manage-container h2 {
   font-size: 24px;
@@ -192,6 +190,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 15px 0;
+  position: relative;
 }
 .header .filter-container .d-flex {
   align-items: center;
@@ -212,6 +211,14 @@ body {
   border-radius: 100rem;
   padding: 2px 3px;
   color: #c5ceda;
+}
+.header .b-line {
+  position: absolute;
+  width: 130%;
+  height: 1px;
+  background-color: #ced6e0;
+  bottom: -2%;
+  margin: 0 -20px;
 }
 
 .info {
@@ -263,21 +270,21 @@ body {
 }
 
 .list {
-  height: 100vh;
+  background-color: #f6f7fb;
   padding-top: 25px;
   overflow: scroll;
   padding-bottom: 20px;
 }
 .list .item {
+  padding: 25px 20px;
   flex: 100%;
   border-radius: 4px;
   box-shadow: 0px 0px 5px #ccc;
-  padding: 1vh;
   position: relative;
 }
 .list .item .flag {
   position: absolute;
-  top: 21px;
+  top: 8px;
   left: 10px;
   font-size: 10px;
   color: #ced6e0;
@@ -355,6 +362,9 @@ body {
   color: #96a4b7;
 }
 
+.payment-header {
+  position: relative;
+}
 .payment-header .container {
   justify-content: space-between;
   align-items: center;
@@ -371,15 +381,29 @@ body {
 .payment-header span {
   font-size: 14px;
 }
+.payment-header .flag {
+  left: 6px;
+  top: 9px;
+  position: absolute;
+}
+.payment-header .flag i {
+  font-size: 13px;
+  color: red;
+}
 .payment-header .icon.close {
   font-size: 22px;
 }
 .payment-header .payment-info {
+  padding-left: 25px;
   position: relative;
   background-color: #2d384e;
 }
 .payment-header .payment-info .container {
   padding: 15px 0;
+}
+.payment-header .payment-info .flag {
+  position: absolute;
+  color: red;
 }
 .payment-header .payment-info p {
   color: #fff;
@@ -416,10 +440,18 @@ body {
 }
 .payment-header .payment-info-menu .item {
   padding: 15px 0;
-  border-bottom: 1px solid #ced6e0;
+  position: relative;
 }
 .payment-header .payment-info-menu .item span {
   font-size: 16px;
+}
+.payment-header .payment-info-menu .item .b-line {
+  position: absolute;
+  bottom: -2%;
+  width: 150%;
+  margin-left: -30px;
+  height: 1px;
+  background-color: #ced6e0;
 }
 .payment-header .payment-info-menu.active {
   visibility: visible;
@@ -444,13 +476,14 @@ body {
 
 .list {
   overflow: scroll;
-  height: 100vh;
+  background-color: #fff;
 }
 .list .item {
   cursor: pointer;
+  padding: 25px 20px;
   position: relative;
-  padding: 1vh;
   border-bottom: 1px solid #ced6e0;
+  background-color: #fff;
   padding-left: 35px;
 }
 .list .item .pen-icon {
@@ -465,6 +498,10 @@ body {
 }
 .list .item .pen-icon.active {
   display: block;
+}
+.list .item .price {
+  color: #ced6e0;
+  font-weight: 600;
 }
 .list .item .amount {
   font-size: 16px;
@@ -483,7 +520,7 @@ body {
 }
 .list .item .flag {
   position: absolute;
-  top: 16px;
+  top: 27px;
   left: 10px;
 }
 .list .item .remove {
@@ -650,18 +687,18 @@ body {
 }
 
 .list-food-info {
-  height: 100vh;
+  background-color: #fff;
   overflow: scroll;
 }
 .list-food-info .item.done {
   background-color: #f6f7fb;
 }
 .list-food-info .item {
+  background-color: #fff;
   cursor: pointer;
   position: relative;
   border-bottom: 1px solid #ced6e0;
-  padding: 1vh;
-  /*  */
+  padding: 25px 20px;
 }
 .list-food-info .item .pen-icon {
   position: absolute;

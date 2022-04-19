@@ -1,4 +1,5 @@
 .payment-header{
+    position: relative;
     .container{
         justify-content: space-between;
         align-items: center;
@@ -17,14 +18,29 @@
     span{
         font-size: 14px;
     }
+    .flag{
+        left: 6px;
+        top: 9px;
+        position: absolute;
+        i{
+            font-size: 13px;
+            color: red;
+        }
+    }
     .icon.close{
         font-size: 22px;
     }
     .payment-info{
+        padding-left: 25px;
         position: relative;
         background-color: #2d384e;
+        
         .container{
             padding: 15px 0;
+        }
+        .flag{
+            position: absolute;
+            color: red;
         }
         
         p{
@@ -62,9 +78,17 @@
             }
             .item{
                 padding: 15px 0;
-                border-bottom: 1px solid $gray;
+                position: relative;
                 span{
                     font-size: 16px;
+                }
+                .b-line{    
+                    position: absolute;
+                    bottom: -2%;
+                    width: 150%;
+                    margin-left: -30px;
+                    height: 1px;
+                    background-color: $gray;
                 }
             }
             

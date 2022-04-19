@@ -1,16 +1,16 @@
 .list-food-info{
-    height: 100vh;
-
+    
+    background-color: #fff;
     overflow: scroll;
     .item.done{
         background-color: #f6f7fb;
     }
     .item{
+        background-color: #fff;
         cursor: pointer;
         position: relative;
         border-bottom: 1px solid $gray;
-        padding: 1vh;
-        /*  */
+        padding: 25px 20px;
         .pen-icon{
             position: absolute;
             color: red;

@@ -1,11 +1,13 @@
 .list{
     overflow: scroll;
-    height: 100vh;
+    
+    background-color: #fff;
     .item{
         cursor: pointer;
+        padding: 25px 20px;
         position: relative;
-        padding: 1vh;
         border-bottom: 1px solid $gray;
+        background-color: #fff;
         padding-left: 35px;
         .pen-icon{
             position: absolute;
@@ -19,6 +21,10 @@
         }
         .pen-icon.active{
             display: block;
+        }
+        .price{
+            color: $gray;
+            font-weight: 600;
         }
         .amount{
             font-size: 16px;
@@ -37,7 +43,7 @@
         }
         .flag{
             position: absolute;
-            top: 16px;
+            top: 27px;
             left: 10px;
         }
         .remove{
