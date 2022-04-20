@@ -1,7 +1,7 @@
 .list{
     overflow: scroll;
     
-    background-color: #fff;
+    background-color: #f6f7fb;
     .item{
         cursor: pointer;
         padding: 25px 20px;
@@ -67,6 +67,8 @@
 }
 
 .list.payment-list{
+    padding-top: 0;
+    background-color: #fff;
     .item{
         margin-top: 0;
         box-shadow: none;

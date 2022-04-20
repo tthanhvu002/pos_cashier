@@ -214,11 +214,11 @@ body {
 }
 .header .b-line {
   position: absolute;
-  width: 130%;
+  width: 140%;
   height: 1px;
   background-color: #ced6e0;
   bottom: -2%;
-  margin: 0 -20px;
+  margin: 0 -40px;
 }
 
 .info {
@@ -381,6 +381,9 @@ body {
 .payment-header span {
   font-size: 14px;
 }
+.payment-header .id {
+  margin-right: auto;
+}
 .payment-header .flag {
   left: 6px;
   top: 9px;
@@ -476,7 +479,7 @@ body {
 
 .list {
   overflow: scroll;
-  background-color: #fff;
+  background-color: #f6f7fb;
 }
 .list .item {
   cursor: pointer;
@@ -542,6 +545,10 @@ body {
   display: none;
 }
 
+.list.payment-list {
+  padding-top: 0;
+  background-color: #fff;
+}
 .list.payment-list .item {
   margin-top: 0;
   box-shadow: none;
