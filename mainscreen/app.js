@@ -1,5 +1,4 @@
 const noti = document.querySelectorAll('.noti')
-
 const mainWrapper = document.querySelector('.main-wrapper')
 const paymentWrapper = document.querySelector('.payment-wrapper')
 const foodInfoWrapper = document.querySelector('.food-info-wrapper')
@@ -59,7 +58,6 @@ const itemFood = document.querySelectorAll('.food-info-wrapper .list-food-info .
 console.log(itemFood);
 Array.from(itemFood).forEach(item => {
     item.onclick = () => {
-        console.log(1);
         item.querySelector('.pen-icon').classList.toggle('active')
         item.querySelector('.remove').classList.toggle('active')
 
