@@ -1,5 +1,6 @@
 .list{
     overflow: scroll;
+    height: 100vh;
     
     background-color: #f6f7fb;
     .item{
@@ -69,6 +70,8 @@
 .list.payment-list{
     padding-top: 0;
     background-color: #fff;
+    height: 100vh;
+
     .item{
         margin-top: 0;
         box-shadow: none;
