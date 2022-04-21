@@ -7,10 +7,19 @@
         cursor: pointer;
         padding: 25px 20px;
         position: relative;
-        border-bottom: 1px solid $gray;
         background-color: #fff;
         padding-left: 35px;
+        .b-line{
+            position: absolute;
+            bottom: -2%;
+            width: 150%;
+            margin-left: -30px;
+            height: 1px;
+            background-color: $gray;
+            z-index: 2;
+        }
         .pen-icon{
+            top: 2px;
             position: absolute;
             color: red;
             font-size: 10px;

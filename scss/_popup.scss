@@ -8,6 +8,7 @@
     visibility: hidden;
     background-color: rgba(0, 0, 0, 0.317);
     transition: 0.2s ease-in;
+    z-index: 99;
 }
 .overlay.active{
     top: 0;
@@ -15,15 +16,17 @@
     opacity: 1;
 }
 .popup{
+    border-radius: 18px;
     width: 345px;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    border-radius: 10px;
     background-color: #fff;
     z-index: 999;
     &-head{
+        border-radius: 18px;
+
         background-color: #f6f7fb;
         padding: 30px 0;
         img{
@@ -57,6 +60,9 @@
             }
         }
     }
+    .icon{
+        display: none;
+    }
     &-payment{
         padding: 30px 20px;
         border-bottom: 1px solid $gray;
@@ -79,10 +85,13 @@
         .close{
             background-color: #f6f7fb;
             color: $text-gray;
+            border-bottom-left-radius: 18px;
         }
         .confirm{
             background-color: #ef5337;
             color: #fff;
+            border-bottom-right-radius: 18px;
+
         }
     }
 }

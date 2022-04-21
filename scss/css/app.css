@@ -271,6 +271,7 @@ body {
 
 .list {
   background-color: #f6f7fb;
+  height: 100vh;
   padding-top: 25px;
   overflow: scroll;
   padding-bottom: 20px;
@@ -479,17 +480,27 @@ body {
 
 .list {
   overflow: scroll;
+  height: 100vh;
   background-color: #f6f7fb;
 }
 .list .item {
   cursor: pointer;
   padding: 25px 20px;
   position: relative;
-  border-bottom: 1px solid #ced6e0;
   background-color: #fff;
   padding-left: 35px;
 }
+.list .item .b-line {
+  position: absolute;
+  bottom: -2%;
+  width: 150%;
+  margin-left: -30px;
+  height: 1px;
+  background-color: #ced6e0;
+  z-index: 2;
+}
 .list .item .pen-icon {
+  top: 2px;
   position: absolute;
   color: red;
   font-size: 10px;
@@ -548,6 +559,7 @@ body {
 .list.payment-list {
   padding-top: 0;
   background-color: #fff;
+  height: 100vh;
 }
 .list.payment-list .item {
   margin-top: 0;
@@ -614,6 +626,7 @@ body {
   visibility: hidden;
   background-color: rgba(0, 0, 0, 0.317);
   transition: 0.2s ease-in;
+  z-index: 99;
 }
 
 .overlay.active {
@@ -623,16 +636,17 @@ body {
 }
 
 .popup {
+  border-radius: 18px;
   width: 345px;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  border-radius: 10px;
   background-color: #fff;
   z-index: 999;
 }
 .popup-head {
+  border-radius: 18px;
   background-color: #f6f7fb;
   padding: 30px 0;
 }
@@ -666,6 +680,9 @@ body {
   font-weight: 600;
   color: #96a4b7;
 }
+.popup .icon {
+  display: none;
+}
 .popup-payment {
   padding: 30px 20px;
   border-bottom: 1px solid #ced6e0;
@@ -687,13 +704,16 @@ body {
 .popup-btn .close {
   background-color: #f6f7fb;
   color: #96a4b7;
+  border-bottom-left-radius: 18px;
 }
 .popup-btn .confirm {
   background-color: #ef5337;
   color: #fff;
+  border-bottom-right-radius: 18px;
 }
 
 .list-food-info {
+  height: 100vh;
   background-color: #fff;
   overflow: scroll;
 }

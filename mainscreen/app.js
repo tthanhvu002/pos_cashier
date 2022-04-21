@@ -55,6 +55,7 @@ Array.from(itemPayment).forEach(item => {
     }
 })
 const itemFood = document.querySelectorAll('.food-info-wrapper .list-food-info .item')
+const itemFood2 = document.querySelectorAll('.payment-list .item')
 console.log(itemFood);
 Array.from(itemFood).forEach(item => {
     item.onclick = () => {
@@ -63,7 +64,13 @@ Array.from(itemFood).forEach(item => {
 
     }
 })
+Array.from(itemFood2).forEach(item => {
+    item.onclick = () => {
+        item.querySelector('.pen-icon').classList.toggle('active')
+        item.querySelector('.remove').classList.toggle('active')
 
+    }
+})
 const paymentInfo = document.querySelectorAll('.payment-info')
 paymentInfo.forEach(item => {
     item.onclick =() => {
