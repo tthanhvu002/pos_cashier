@@ -387,7 +387,7 @@ body {
 }
 .payment-header .flag {
   left: 6px;
-  top: 9px;
+  top: 16px;
   position: absolute;
 }
 .payment-header .flag i {
@@ -549,7 +549,7 @@ body {
   color: red;
 }
 .list .item .remove.active {
-  display: block;
+  display: flex;
 }
 
 .list::-webkit-scrollbar {
@@ -805,7 +805,8 @@ body {
   color: red;
 }
 .list-food-info .item .remove.active {
-  display: block;
+  display: flex;
+  gap: 5px;
 }
 
 .list-food-info::-webkit-scrollbar {

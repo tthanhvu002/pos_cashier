@@ -1,3 +1,8 @@
-<svg width="16px" height="16px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-intersect">
-  <path d="M0 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2H2a2 2 0 0 1-2-2V2zm5 10v2a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2v5a2 2 0 0 1-2 2H5zm6-8V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h2V6a2 2 0 0 1 2-2h5z"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="16.5" height="16.5" viewBox="0 0 16.5 16.5">
+  <g id="sync-devices" transform="translate(0.25 0.25)">
+    <path id="Path" d="M0,0A5.5,5.5,0,0,1,5.125,3.5" transform="translate(9 1.5)" fill="none" stroke="#afbac9" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+    <path id="Path-2" data-name="Path" d="M5.125,3.5A5.5,5.5,0,0,1,0,0" transform="translate(1.875 11)" fill="none" stroke="#afbac9" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+    <rect id="Rectangle" width="6" height="8" rx="1" transform="translate(0.5 0.5)" fill="none" stroke="#afbac9" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+    <rect id="Rectangle-2" data-name="Rectangle" width="6" height="8" rx="1" transform="translate(9.5 7.5)" fill="none" stroke="#afbac9" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+  </g>
 </svg>

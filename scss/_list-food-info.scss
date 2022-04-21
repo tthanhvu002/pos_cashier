@@ -90,7 +90,8 @@
             }
         }
         .remove.active{
-            display: block;
+            display: flex;
+            gap: 5px;
         }
     }
 }
